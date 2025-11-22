@@ -1,0 +1,96 @@
+I want to build a fully functional Car Comparison Web Tool using HTML, CSS, JavaScript, and TailwindCSS.
+
+DO NOT use Drizzle or any database. If you need any car data, just mock the data directly inside the JavaScript file as arrays or objects.
+
+The tool should allow users to compare exactly 2 cars side-by-side.
+
+--------------------------------------
+MAIN FEATURES
+--------------------------------------
+1. A dropdown or search box for selecting Car A.
+2. A dropdown or search box for selecting Car B.
+3. A side-by-side comparison layout showing:
+   - Car image
+   - Name
+   - Price
+   - Year
+   - Mileage
+   - Horsepower
+   - Fuel type
+   - Transmission
+   - Any additional specs included in the mock data
+4. Automatically highlight which car has better specs (e.g. more horsepower).
+5. A short auto-generated summary text of the comparison.
+
+--------------------------------------
+ACTIONS
+--------------------------------------
+Each car should have:
+- A “Buy This Car” button (link stored in a variable like BUY_LINK_CAR_A or BUY_LINK_CAR_B)
+There should also be:
+- A “Chat With Us” button that opens a link to WhatsApp, Telegram, Messenger, or any link I choose. The link should be stored in a variable like CHAT_LINK so the website owner can easily edit it.
+
+--------------------------------------
+MOCK DATA
+--------------------------------------
+In script.js, create an array like:
+
+const cars = [
+  {
+    id: 1,
+    name: "Toyota Camry 2019",
+    price: "$18,000",
+    horsepower: 203,
+    fuel: "Petrol",
+    year: 2019,
+    transmission: "Automatic",
+    mileage: "45,000 km",
+    image: "url-or-local-file"
+  },
+  {
+    id: 2,
+    name: "Honda Accord 2019",
+    price: "$19,500",
+    horsepower: 192,
+    fuel: "Petrol",
+    year: 2019,
+    transmission: "Automatic",
+    mileage: "50,000 km",
+    image: "url-or-local-file"
+  }
+];
+
+You can add more mocked cars.
+
+--------------------------------------
+DESIGN REQUIREMENTS
+--------------------------------------
+- Use TailwindCSS for all styling.
+- Clean, modern dealership-friendly UI.
+- Fully responsive for mobile and desktop.
+- Comparison table/cards must look neat and balanced.
+- Buttons should look modern and clickable.
+
+--------------------------------------
+EXPECTED FILE STRUCTURE
+--------------------------------------
+index.html
+script.js
+tailwind.config.js
+(Optional) style.css but Tailwind should handle most styling.
+
+--------------------------------------
+FUNCTIONAL FLOW
+--------------------------------------
+1. User selects two cars.
+2. The tool displays both cars with all specs.
+3. Specs should appear side-by-side.
+4. Better specs should be visually highlighted.
+5. Summary text should explain which car is better overall.
+6. Buttons to Buy Car A, Buy Car B, and Chat With Us should be visible.
+
+--------------------------------------
+IMPORTANT
+--------------------------------------
+Make sure the code is clean, simple, well-commented, and easy for a dealership to customize.
+Ask me questions if you need anything else.
